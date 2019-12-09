@@ -1,0 +1,8 @@
+kind: pipeline
+name: default
+
+steps:
+  - name: docker-tag-demo
+    image: debian:stable-slim
+    commands:
+      - echo "The current repo is ${DRONE_REPO}"
